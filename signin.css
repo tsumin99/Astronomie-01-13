@@ -1,0 +1,46 @@
+body {
+    background-repeat: no-repeat;
+  }
+  .form-group {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    /*margin-top:10 auto;*/
+    /*margin-left:100px; 往左*/
+    margin: 0 auto;
+  }
+  
+  /*.container
+  { 
+    margin: 0 auto;
+  }*/
+
+  .form-group .checkbox {
+      font-weight: 400;
+    }
+  
+  #alert_messages{
+    padding: 0px;
+    }
+  
+  .container-fluid{
+    font-family: 'Mukta', sans-serif, Microsoft JhengHei;
+  }
+  
+  .navbar-brand 
+  { 
+      display: block;
+      color: #6B89F2 !important; 
+      font-size: 1.8rem !important; 
+      font-weight:bold;
+        text-decoration: none;
+        padding: 13px;
+      margin: 0px; 
+  } 
+  .navbar-nav
+  {
+      font-size: 1.2rem !important; 
+      margin: 0px; 
+  }
+  
+  

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Astronomie - Sign In</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="signin.css">
+
+  <!-- Bootstrap core CSS & Javascript -->
+  <!--Note that jquery must be put before Bootstrap, or it may get wrong-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Firebase App is always required and must be first -->
+  <!-- --------Maybe can changed into Django------------ -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+  <!--Add initialization configuration-->
+  <!--This JS connect with initialize of Firebase -->
+  <!-- --------Maybe can changed into Django------------ -->
+  <script src="config.js"></script>
+
+  <!--Inside Javascript-->
+  <script src="signin.js"></script>
+
+</head>
+<body class="">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" style="margin:0px 0;">
+    <a class="navbar-brand" href="#">Astronomie</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" role="tablist" id="navb">
+      <ul class="navbar-nav ml-auto" id="Sign_status">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ongoing project</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Log in</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Sign up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar -->
+  
+<div class="p-5 text-left bg-image"
+style="
+  background-image: url('ADB4.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 694px;
+">
+    <div id="alert_messages"><!--這裡要顯示alert message-->
+
+    </div>  
+  <div class="container-fluid">
+    <h1 style="color:#FFFFFF;">Hello！</h1>
+
+      <form action="Homepage(after login).html" class=""><!--按下Submit後要連結到哪個網站可在action後面填寫網址-->
+        <!--<img src="mindvoice1.png" class="img-fluid">-->
+
+        <div class=" form-group">
+          <h5 style="color:#FFFFFF;">I'm .....</h5>
+          <br>
+          <label for="email"><h5 style="color:#FFFFFF;">Email</h5></label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" style="max-width: 350px;">
+          <label for="pwd"><h5 style="margin-top:10px; color:#FFFFFF;">Password</h5></label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" style="margin-top:0px; max-width: 350px;">
+          <br>
+          
+            <button type="button" class="btn btn-link btn-block" id="btnforgot" style="max-width: 350px;">Forgot? Let me help you</button>
+            <button type="button" class="btn btn-md btn-primary btn-block" id="btnLogin" style="background-color:#0d0d0e; border:#4169E1; max-width: 350px;">Start the journey to Astronomie !</button>
+            <hr  color="white"  style="max-width: 350px; margin-left:0">
+            <h6 style="color:#FFFFFF;">Or you can try this</h6>
+            <button type="button" class="btn btn-md btn-info btn-block" id="btngoogle" style="background-color:#ffffff; border:#1E90FF; color:#0d0d0e; max-width: 350px; "><img src="https://img.icons8.com/color/16/000000/google-logo.png"> Sign in with Google</button>
+            <br>
+            <p class="" style="color:#FFFFFF;">Do not have an account? <a href="sign_up.html" data-abc="true">Sign Up!</a></p>
+        </div>
+        
+      </form>
+      
+    </div>
+</div>
+</body>
+</html>

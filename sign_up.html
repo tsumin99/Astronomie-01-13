@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Astronomie - Sign Up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="sign_up.css">
+
+  <!-- Bootstrap core CSS & Javascript -->
+  <!--Note that jquery must be put before Bootstrap, or it may get wrong-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <!-- Firebase App is always required and must be first -->
+  <!-- --------Maybe can changed into Django------------ -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.10.1/firebase.js"></script>
+
+  <!--Add initialization configuration-->
+  <!--This JS connect with initialize of Firebase -->
+  <!-- --------Maybe can changed into Django------------ -->
+  <script src="config.js"></script>
+
+  <!--Inside Javascript-->
+  <script src="sign_up.js"></script>
+
+</head>
+<body class="">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white" style="margin:0px 0;">
+    <a class="navbar-brand" href="#">Astronomie</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navb">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" role="tablist" id="navb">
+      <ul class="navbar-nav ml-auto" id="Sign_status">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ongoing project</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Log in</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Sign up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar -->
+  
+<div class="p-5 text-left bg-image"
+style="
+  background-image: url('ADB4.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  height: 694px;
+">
+    <div id="alert_messages"><!--這裡要顯示alert message-->
+
+    </div>  
+  <div class="container-fluid">
+    <h1 style="color:#FFFFFF;">Welcome！</h1>
+
+      <form action="" class=""><!--按下Submit後要連結到哪個網站可在action後面填寫網址-->
+        <!--<img src="mindvoice1.png" class="img-fluid">-->
+        
+        <div class=" form-group container">
+          <h5 style="color:#FFFFFF;">Getting chances to use your equipments efficiently!</h5>
+          <h5 style="color:#FFFFFF; margin-top:5px;">Getting to join the projects you want!</h5>
+          <h5 style="color:#FFFFFF; margin-top:5px;">Getting to store the data of your projects!</h5>
+          <br>
+          <label for="email"><h5 style="color:#FFFFFF;">Email</h5></label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email" style="max-width: 350px;">
+          <label for="pwd"><h5 style="margin-top:10px; color:#FFFFFF;">Password</h5></label>
+          <input type="password" class="form-control" id="pwd" placeholder="Enter password" style="margin-top:0px; max-width: 350px;">
+          <br>
+          <div class="checkbox">
+              <label style="margin-top:10px;"><input type="checkbox" id="remember" name="remember" style="font-weight: 400;"><span style="color: white;"> I agree to Astronomie's Terms of Service </span></label>
+              <br>
+              <label style="margin-top:10px;"><input type="checkbox" id="remember" name="remember" style="font-weight: 400;"><span style="color: white;"> I accept Astronomie's use of my data for the service and everything else described in the Privacy Policy </span></label>
+          </div>
+            <br>
+            <button type="button" class="btn btn-md btn-success btn-block" id="btnSignUp" style="background-color:#0d0f0f; border:#87CEFA; max-width: 350px;">Become an Astronomie !</button>
+            <br>
+            <p class="" style="color:#FFFFFF;">Already have an account? <a href="signin.html" data-abc="true">Login!</a></p>
+        </div>
+      </form>
+      
+    </div>
+  </div>
+</body>
+</html>
