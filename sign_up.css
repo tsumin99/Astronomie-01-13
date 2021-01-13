@@ -1,0 +1,45 @@
+body {
+    background-repeat: no-repeat;
+  }
+  .form-group {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    /*margin-top:10 auto;*/
+    /*margin-left:100px; 往左*/
+    /*margin: 0 auto;*/
+  }
+  
+  /*.container { 即距離最上面有16px的空白
+      padding: 0px;
+      style="max-width: 330px;"
+  }*/
+  .form-group .checkbox {
+      font-weight: 400;
+    }
+  
+  #alert_messages{
+    padding: 0px;
+    }
+  
+  .container-fluid{
+    font-family: 'Mukta', sans-serif, Microsoft JhengHei;
+  }
+  
+  .navbar-brand 
+  { 
+      display: block;
+      color: #6B89F2 !important; 
+      font-size: 1.8rem !important; 
+      font-weight:bold;
+        text-decoration: none;
+        padding: 13px;
+      margin: 0px; 
+  } 
+  .navbar-nav
+  {
+      font-size: 1.2rem !important; 
+      margin: 0px; 
+  }
+  
+  
